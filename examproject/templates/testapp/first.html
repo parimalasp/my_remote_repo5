@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>employee table</h1>
+
+    <table border="1">
+      <thead>
+        <th>empno</th>
+        <th>name</th>
+        <th>sal</th>
+        <th>addr</th>
+      </thead>
+  {% for e in emp %}
+    <tr>
+      <td>{{e.empno}}</td>
+      <td>{{e.ename}}</td>
+      <td>{{e.sal}}</td>
+      <td>{{e.addr}}</td>
+    </tr>
+  {% endfor %}
+  </table>
+
+
+
+  </body>
+</html>
